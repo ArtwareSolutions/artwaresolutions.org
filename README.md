@@ -16,7 +16,6 @@ It is a plain static site (HTML + CSS, no build step, no dependencies).
 | `404.html` | Page served by GitHub Pages for unknown URLs |
 | `assets/logo.svg` | Official logo (vector, transparent background) |
 | `assets/logo.png` | PNG logo, used for social sharing previews |
-| `assets/fonts/` | Brand web fonts (woff2) |
 | `assets/favicon.png` | Favicon / touch icon |
 | `.well-known/did.json`, `.well-known/did-configuration.json` | DID (`did:web:artwaresolutions.org`) documents |
 | `CNAME` | Custom domain for GitHub Pages |
@@ -45,5 +44,5 @@ The site is served by GitHub Pages straight from the root of the `main` branch (
 - Blue `#21409A`, orange `#F5821F`, on a white background
 - Tagline: *Solutions for the art world*
 - The logo lettering is set in Handel Gothic and Bank Gothic (outlined in `assets/logo.svg`).
-- Site typeface: Handel Gothic (`assets/fonts/handel-gothic.woff2`) for headings, eyebrow/tag labels and buttons; system font for body text. Bank Gothic is not yet included (see [#3](https://github.com/ArtwareSolutions/artwaresolutions.org/issues/3)).
+- Site typefaces are loaded from Adobe Fonts via the web project stylesheet `https://use.typekit.net/wpv5rvp.css` (the font files are not in the repo; the domains must be listed in that Adobe project): Bank Gothic (`bank-gothic-bt`, 500) for headings, Handel Gothic (`handel-gothic`, 300/700) for eyebrow/tag labels and buttons; system font for body text.
 - Contact: info@artwaresolutions.org
