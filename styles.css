@@ -1,10 +1,6 @@
-@font-face {
-  font-family: "Handel Gothic";
-  src: url("assets/fonts/handel-gothic.woff2") format("woff2");
-  font-weight: 400; font-style: normal; font-display: swap;
-}
 :root {
-  --font-brand: "Handel Gothic", "Arial Narrow", system-ui, sans-serif;
+  --font-display: "bank-gothic-bt", "handel-gothic", "Arial Narrow", system-ui, sans-serif;
+  --font-brand: "handel-gothic", "Arial Narrow", system-ui, sans-serif;
   --bg: #ffffff;
   --bg-alt: #f5f7fb;
   --card: #ffffff;
@@ -95,5 +91,6 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   .hero .btn + .btn { margin: 12px 0 0; }
 }
 
-/* Brand typeface (matches the logo lettering). Handel Gothic ships in one weight, so avoid faux bold. */
-h1, h2, h3, .eyebrow, .tag, .btn { font-family: var(--font-brand); font-weight: 400; }
+/* Brand typefaces (match the logo lettering): Bank Gothic (Adobe Fonts) for headings, Handel Gothic (Adobe Fonts, 300/700) for labels/buttons. */
+h1, h2, h3 { font-family: var(--font-display); font-weight: 500; font-style: normal; }
+.eyebrow, .tag, .btn { font-family: var(--font-brand); font-weight: 700; font-style: normal; }
